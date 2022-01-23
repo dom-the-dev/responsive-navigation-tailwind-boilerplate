@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boilerplate - Responsive Navigation /w Tailwindcss</title>
+    <link href="/dist/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="bg-dark text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="https://domthedev.com">
+            <h1 class="p-2 font-bold text-brand">dom the dev</h1>
+        </a>
+
+
+        <button class="absolute right-0 top-0 z-10 md:hidden top-3 right-3" id="burger">
+            <div id="bar1" class="rounded w-7 bg-white h-0.5 transform"></div>
+            <div id="bar2" class="rounded w-7 bg-white h-0.5 mt-1"></div>
+            <div id="bar3" class="rounded w-7 bg-white h-0.5 mt-1 transform"></div>
+        </button>
+
+
+        <nav id="navi" class="fixed top-0 bottom-0 bg-dark -right-full w-52 md:static">
+            <ul class="pt-9 md:pt-0 md:flex font-bold">
+                <li>
+                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">About</a>
+                </li>
+                <li>
+                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">Blog</a>
+                </li>
+                <li>
+                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script type="text/javascript" src="./navi.js"></script>
+</body>
+</html>
