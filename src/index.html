@@ -5,42 +5,40 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boilerplate - Responsive Navigation /w Tailwindcss</title>
-    <link href="/dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style.css">
+    <title>Document</title>
 </head>
 <body>
-<header class="bg-dark text-white">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="https://domthedev.com">
-            <h1 class="p-2 font-bold text-brand">dom the dev</h1>
-        </a>
 
+<header class="bg-blue-900 text-white">
+    <div class="container mx-auto items-center flex justify-between">
+        <div>dom the dev</div>
 
-        <button class="absolute right-0 top-0 z-10 md:hidden top-3 right-3" id="burger">
-            <div id="bar1" class="rounded w-7 bg-white h-0.5 transform"></div>
-            <div id="bar2" class="rounded w-7 bg-white h-0.5 mt-1"></div>
-            <div id="bar3" class="rounded w-7 bg-white h-0.5 mt-1 transform"></div>
+        <button id="toggle" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
         </button>
 
-
-        <nav id="navi" class="fixed transition-all top-0 bottom-0 bg-dark -right-full w-52 md:static">
-            <ul class="pt-9 md:pt-0 md:flex font-bold">
+        <nav id="nav" class="fixed top-6 bottom-0 -right-full bg-blue-900 w-52 md:w-auto md:static transition-all">
+            <ul class="md:flex">
                 <li>
-                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">Home</a>
+                    <a class="block p-3" href="#">home</a>
                 </li>
                 <li>
-                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">About</a>
+                    <a class="block p-3" href="#">about</a>
                 </li>
                 <li>
-                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">Blog</a>
+                    <a class="block p-3" href="#">blog</a>
                 </li>
                 <li>
-                    <a class="block px-2 py-2 hover:text-brand hover:underline" href="#">Contact</a>
+                    <a class="block p-3" href="#">contact</a>
                 </li>
             </ul>
         </nav>
     </div>
+    <script type="text/javascript" src="navi.js"></script>
 </header>
-<script type="text/javascript" src="./navi.js"></script>
+
 </body>
 </html>
